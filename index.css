@@ -1,0 +1,120 @@
+*{
+    padding:0;
+    margin:0;
+}
+html, body {
+    width: 100%;
+    height: 100vh;
+}
+body {
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #df3fbf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    position: relative;
+}
+body > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    /* border: 5px solid white; */
+    gap: 10rem;
+}
+body > div  > div:nth-child(1) {
+    width: 50rem;
+    height: 50rem;
+    /* align-self:flex-end; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body >div> div:nth-child(2) {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body >div> div:nth-child(3) {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.clock1 {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+    position: relative;
+    /* background-color: black; */
+  }
+.clock2 {
+  background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    border: 3px solid white;
+    /* box-shadow: 0 0 20px white; */
+    position: relative;
+  }
+.clock3 {
+  background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+    position: relative;
+  }
+
+
+.middle1 {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 2em;
+    height: 2em;
+    background: #0A2463;
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+  }
+  .hour, .second, .minute {
+    position: absolute;
+    left: 49%;
+    bottom: 50%;
+    background: green;
+    background: green;
+    width: 2%;
+    height: 45%;
+    transform: rotate(50deg);
+    border-radius: 25px;
+    transform-origin: 50% 100%;
+  }
+  
+  .minute {
+    transform: rotate(0);
+    height: 45%;
+    background: red;
+  }
+  
+  
+  .second {
+    background: blue;
+    left: 49.3%;
+    transform: rotate(0);
+    height: 45%;
+    border-radius: 25px;
+    width: 5%;
+  } 
+  
